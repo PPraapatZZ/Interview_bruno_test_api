@@ -1,0 +1,16 @@
+meta {
+  name: Get Average Score By Student Id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{base_url}}/junior/score/{{student_id2}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  student_id1: 66010542
+  student_id2: 67010001
+}

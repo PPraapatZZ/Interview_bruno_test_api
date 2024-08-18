@@ -1,0 +1,25 @@
+meta {
+  name: Update Junior By Student Id
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{base_url}}/junior/{{student_id2}}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "student_id": "67010001",
+    "name": "Lisa Lalisa",
+    "nickname": "Lisa",
+    "academic_year": "2"
+  }
+}
+
+vars:pre-request {
+  student_id1: 66010542
+  student_id2: 67010001
+}

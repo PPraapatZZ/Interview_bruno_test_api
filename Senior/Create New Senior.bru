@@ -1,0 +1,18 @@
+meta {
+  name: Create New Senior
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base_url}}/senior
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "PeaSudLhor",
+    "type": "SECONDARY"
+  }
+}

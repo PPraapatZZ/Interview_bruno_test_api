@@ -1,0 +1,16 @@
+meta {
+  name: Delete Junior By Student Id
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{base_url}}/junior/{{student_id2}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  student_id2: 67010001
+  ~student_id1: 66010542
+}

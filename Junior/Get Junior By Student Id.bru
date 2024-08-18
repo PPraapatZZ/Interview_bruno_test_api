@@ -1,0 +1,16 @@
+meta {
+  name: Get Junior By Student Id
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{base_url}}/junior/{{student_id1}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  student_id1: 66010542
+  student_id2: 67010001
+}
