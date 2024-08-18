@@ -1,0 +1,11 @@
+meta {
+  name: Get Assigned Score by Senior and Junior
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{base_url}}/senior/get_assigned_score/{{senior_id}}/{{junior_id}}
+  body: none
+  auth: none
+}
