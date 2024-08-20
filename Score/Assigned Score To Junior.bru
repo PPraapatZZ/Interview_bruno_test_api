@@ -1,0 +1,21 @@
+meta {
+  name: Assigned Score To Junior
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base_url}}/score
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "junior_id": "66c2e527388c9235ffe5d9c5",
+    "senior_id": "66c2ebb5388c9235ffe5d9ca",
+    "criteria_id": "66c2f069388c9235ffe5d9d0",
+    "score": 15,
+    "comment": ""
+  }
+}

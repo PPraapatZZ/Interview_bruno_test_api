@@ -5,7 +5,15 @@ meta {
 }
 
 put {
-  url: {{base_url}}/criteriaType/{{criteria_type_id}}
-  body: none
+  url: {{base_url}}/criteriaType/{{criteria_type_id}}?new_name=милый
+  body: json
   auth: none
+}
+
+params:query {
+  new_name: милый
+}
+
+vars:pre-request {
+  criteria_type_id: 66c2e9cc388c9235ffe5d9c8
 }
